@@ -1,0 +1,28 @@
+html{
+    font-size: 15px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--verylightgray);
+}
+
+h1{
+    color: var(--verylightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: var(--transparentwhite);
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,103 @@
+@import url(variables.css);
+@import url(global.css);
+
+.container{
+    margin: 90px 25px;
+}
+
+.orange-card{
+    background-color: var(--brightorange);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cyan-card{
+    background-color: var(--darkcyan);
+}
+
+.darkcyan-card{
+    background-color: var(--verydarkcyan);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.orange-card, .cyan-card, .darkcyan-card{
+    padding: 50px;
+}
+
+.orange-card img, h1, .cyan-card img, h1, .darkcyan-card img, h1{
+    margin-bottom: 30px;
+    font-size: 2.8rem;    
+}
+
+.orange-card p, .cyan-card p, .darkcyan-card p{
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.orange-card a, .cyan-card a, .darkcyan-card a{
+    background-color: var(--verylightgray);
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.orange-card a{
+    color: var(--brightorange);
+}
+
+.cyan-card a{
+    color: var(--darkcyan);
+}
+
+.darkcyan-card a{
+    color: var(--verydarkcyan);
+}
+
+@media only screen and (min-width: 1024px){
+    .container{
+        display: flex;
+        margin: 170px 83px;
+    }
+
+    .orange-card{
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .darkcyan-card{
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .orange-card a:hover{
+        transition-duration: 0.5s;
+        border: 2px solid var(--verylightgray);
+        color: var(--verylightgray);
+        background-color: var(--brightorange);
+    } 
+
+    .cyan-card a:hover{
+        transition-duration: 0.5s;
+        border: 2px solid var(--verylightgray);
+        color: var(--verylightgray);
+        background-color: var(--darkcyan);
+    } 
+    
+    .darkcyan-card a:hover{
+        transition-duration: 0.5s;
+        border: 2px solid var(--verylightgray);
+        color: var(--verylightgray);
+        background-color: var(--verydarkcyan);
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .container{
+        margin: 170px 260px;
+    }
+    
+    .orange-card p, .cyan-card p, .darkcyan-card p{
+        margin-bottom: 85px;
+    }
+
+    .orange-card, .cyan-card, .darkcyan-card{
+        padding: 50px;
+    }
+}
